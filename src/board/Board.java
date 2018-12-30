@@ -1,5 +1,7 @@
 package board;
 
+import piece.Piece;
+
 import javax.swing.*;
 
 public class Board extends JPanel {
@@ -15,6 +17,10 @@ public class Board extends JPanel {
                 grid[i][j] = new Cell(i, j);
             }
         }
+    }
+
+    public void addPiece(Piece p) {
+        grid[p.getX()][p.getY()].setPiece(p);
     }
 
     /**
