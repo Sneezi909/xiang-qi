@@ -1,19 +1,17 @@
-package Board;
+package board;
 
-import Piece.*;
+import piece.*;
 /*
     Container for the pieces. That's about it
 */
 public class Cell {
-    int x;
-    int y;
+    private final int x;
+    private final int y;
 
-    Piece p;
+    private Piece p;
 
     public Cell(int x, int y) {
-        this.x = x;
-        this.y = y;
-        this.p = null;
+        this(x, y, null);
     }
 
     public Cell(int x, int y, Piece piece) {
@@ -22,8 +20,16 @@ public class Cell {
         this.p = piece;
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     public Piece getPiece() {
-        return this.p;
+        return p;
     }
 
     public void setPiece(Piece p) {
