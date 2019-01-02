@@ -36,5 +36,9 @@ public class Cell {
         this.p = p;
     }
 
+    @Override
+    public String toString() {
+        return (p == null) ? "--------" : p.getType().name();
+    }
 
 }

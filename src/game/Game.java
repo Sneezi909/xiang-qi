@@ -140,8 +140,6 @@ public class Game extends JFrame implements MouseListener {
 
         p1.addPieces(pieces1);
         p2.addPieces(pieces2);
-
-        System.out.println(k.getType());
     }
 
     @Override
@@ -167,5 +165,13 @@ public class Game extends JFrame implements MouseListener {
     @Override
     public void mouseExited(MouseEvent e) {
 
+    }
+
+    public void showBoard() {
+        /**
+        * Method used to show the board in text version.
+        * Used for debugging purposes
+        */
+        this.board.view();
     }
 }

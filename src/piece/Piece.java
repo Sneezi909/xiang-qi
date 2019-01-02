@@ -45,12 +45,13 @@ public abstract class Piece {
         this.type = type;
         this.color = color;
         this.dead = false;
-
+        /*
         try {
             img = ImageIO.read(new File(path));
         } catch (IOException e) {
             //TODO: default image initialization here
         }
+        */
     }
 
     public abstract boolean validMove();
