@@ -7,6 +7,7 @@ public class Pawn extends Piece {
 
     public Pawn(int x, int y, PlayerColor color) {
         super(x, y, PieceType.PAWN, color);
+        crossed = false;
     }
 
     @Override

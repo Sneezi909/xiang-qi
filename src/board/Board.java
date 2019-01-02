@@ -38,11 +38,12 @@ public class Board extends JPanel {
         return eaten;
     }
 
+    /**
+     * Prints the board into the console using the symbols as denoted
+     * Used for debugging purposes
+     */
+
     public void view() {
-        /**
-        * Prints the board into the console using the symbols as denoted
-        * Used for debugging purposes
-        */
         for (int y = 9; y >= 0; y--) {
             for(int x = 0; x <= 8; x++) {
                 StringBuilder str = new StringBuilder(grid[x][y].toString());

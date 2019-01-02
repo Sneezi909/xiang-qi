@@ -57,8 +57,10 @@ public abstract class Piece {
     public abstract boolean validMove();
 
     public void move(int x, int y) {
-        this.x = x;
-        this.y = y;
+        if (this.validMove()) {
+            this.x = x;
+            this.y = y;
+        }
     }
 
     public void remove() {
