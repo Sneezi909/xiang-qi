@@ -56,19 +56,92 @@ public class Game extends JFrame implements MouseListener {
         }
 
         // Add cannons
+        Cannon c = new Cannon(1, 7, color1);
+        board.addPiece(c);
+        pieces1.add(c);
+        c = new Cannon(7, 7, color1);
+        board.addPiece(c);
+        pieces1.add(c);
+
+        c = new Cannon(1, 2, color2);
+        board.addPiece(c);
+        pieces2.add(c);
+        c = new Cannon(7, 2, color2);
+        board.addPiece(c);
+        pieces2.add(c);
 
         // Add cars
+        Car ca = new Car(0, 9, color1);
+        board.addPiece(ca);
+        pieces1.add(ca);
+        ca = new Car(8, 9, color1);
+        board.addPiece(ca);
+        pieces1.add(ca);
+
+        ca = new Car(0, 0, color2);
+        board.addPiece(ca);
+        pieces2.add(ca);
+        ca = new Car(8, 0, color2);
+        board.addPiece(ca);
+        pieces2.add(ca);
 
         // Add horses
+        Horse h = new Horse(1, 9, color1);
+        board.addPiece(h);
+        pieces1.add(h);
+        h = new Horse(7, 9, color1);
+        board.addPiece(h);
+        pieces1.add(h);
+
+        h = new Horse(1, 0, color2);
+        board.addPiece(h);
+        pieces2.add(h);
+        h = new Horse(7, 0, color2);
+        board.addPiece(h);
+        pieces2.add(h);
 
         // Add elephants
+        Elephant e = new Elephant(2, 9, color1);
+        board.addPiece(e);
+        pieces1.add(e);
+        e = new Elephant(6, 9, color1);
+        board.addPiece(e);
+        pieces1.add(e);
+
+        e = new Elephant(2, 0, color2);
+        board.addPiece(e);
+        pieces2.add(e);
+        e = new Elephant(6, 0, color2);
+        board.addPiece(e);
+        pieces2.add(e);
 
         // Add guards
+        Guard g = new Guard(3, 9, color1);
+        board.addPiece(g);
+        pieces1.add(g);
+        g = new Guard(5, 9, color1);
+        board.addPiece(g);
+        pieces1.add(g);
+
+        g = new Guard(3, 0, color2);
+        board.addPiece(g);
+        pieces2.add(g);
+        g = new Guard(5, 0, color2);
+        board.addPiece(g);
+        pieces2.add(g);
 
         // Add kings
+        King k = new King(4, 0, color1);
+        board.addPiece(k);
+        pieces1.add(k);
+        k = new King(4, 9, color2);
+        board.addPiece(k);
+        pieces2.add(k);
 
         p1.addPieces(pieces1);
         p2.addPieces(pieces2);
+
+        System.out.println(k.getType());
     }
 
     @Override

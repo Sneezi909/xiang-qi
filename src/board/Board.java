@@ -38,4 +38,11 @@ public class Board extends JPanel {
         return eaten;
     }
 
+    public void printBoard() {
+        /**
+        * Prints the board into the console using the symbols as denoted
+        * Used for debugging purposes
+        */
+
+    }
 }
